@@ -1,0 +1,85 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  padding:20px;
+  background-color: rgb(4, 179, 254);
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  color: black;
+
+}
+
+.link {
+  display: flex;
+  justify-content:space-between;
+  gap: 30px;
+}
+
+.link a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+}
+.border
+{
+    display:flex;
+    margin: 70px;
+    padding: 30px;
+    border:dotted darkblue ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 10;
+}
+.box
+{
+
+      margin: 30px;
+      height: 20vw;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://picsum.photos/1200/800");
+      background-size: cover;
+      background-position: center;
+
+    }
+.design
+{
+      background: rgba(255, 255, 255, 0.8); /* semi-transparent white */ /**/
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+.design h1 {
+      font-size: 2rem; /* uses rem */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+.design p 
+{
+      font-size: 1em; /* depends on parent font */
+    }
+
+
+.flexbox
+{
+  display: flex;
+  background-color: blueviolet;
+  padding: 40px;
+ margin: 40px;
+}
+
+
