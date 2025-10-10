@@ -1,0 +1,101 @@
+.box1 {
+    background-color: skyblue;
+    color: rgb(255, 3, 32);
+    text-align: center;
+    padding: 35px;
+    border: 5px solid rebeccapurple;
+    margin-left: 670px;
+    margin-right: 670px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.box2 {
+    background-color: yellow;
+    color: brown;
+    text-align: center;
+    padding: 35px;
+    border: 5px solid orange;
+    margin-left: 670px;
+    margin-right: 670px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.box3 {
+    background-color: plum;
+    color: crimson;
+    text-align: center;
+    padding: 35px;
+    border: 5px solid purple;
+    margin-left: 670px;
+    margin-right: 670px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.box4 {
+    background-color: darkorange;
+    color: firebrick;
+    text-align: center;
+    padding: 35px;
+    border: 5px solid darkslateblue;
+    margin-left: 670px;
+    margin-right: 670px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.image1 {
+    background-color: green;
+    color: firebrick;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid gray;
+    width: 50%;
+}
+
+.text {
+    text-align: justify;
+    padding: 10px;
+    border: 5px solid red;
+}
+
+.heading {
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.link {
+    text-align: center;
+    color: orange;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.image2 {
+
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid gray;
+    text-align: center;
+
+    margin: 20px;
+
+
+}
+
+.image2 a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.link a {
+    text-decoration: none;
+    color: brown;
+}
+

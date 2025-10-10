@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  padding:20px;
+  background-color: rgb(4, 179, 254);
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  color: black;
+
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.link a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+}
+.flexbox
+{
+  display: flex;
+  background-color: blueviolet;
+  padding: 40px;
+ margin: 40px;
+}

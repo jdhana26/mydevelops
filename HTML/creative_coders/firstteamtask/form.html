@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complaint Registration Form</title>
+</head>
+<body>
+  <header>
+    <h1 align="center">📝 Complaint Registration Portal</h1>
+    <hr>
+  </header>
+
+  <main>
+    
+    <form action="submitted.html" method="get">
+      <fieldset>
+        <legend><b>Personal Details</b></legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required><br><br>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="area">Area:</label><br>
+        <input type="text" id="area" name="area" placeholder="Enter your area/locality" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Complaint Details</b></legend>
+
+        <label for="problem">Problem Description:</label><br>
+        <textarea id="problem" name="problem" rows="5" cols="40" placeholder="Describe your issue in detail" required></textarea><br><br>
+
+        <label for="days">How many days not solved:</label><br>
+        <input type="number" id="days" name="days_not_solved" min="0" placeholder="Enter number of days" required><br><br>
+      </fieldset>
+
+      <br>
+      <div align="center">
+        <button type="submit">✅ Submit Complaint</button>
+        <button type="reset">🔄 Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <hr>
+    <p align="center">© 2025 Complaint Portal - Chennai</p>
+  </footer>
+</body>
+</html>
