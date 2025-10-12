@@ -16,7 +16,7 @@
 .logo
 {
    display:flex;
-   justify-content: space-between;
+   justify-content:space-between;
    gap:20px;
 }
 .logo1
@@ -95,5 +95,6 @@
 .nav4 i {
     padding: 5px;
 }
+ 
 
  

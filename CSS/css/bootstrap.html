@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html">Media Queries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="animate.html">Animation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jvs.html">Javascript</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+<div class="container-sm">
+        <div class="col-12">
+            <h1 class="display-2">Bootstrap</h1>
+            <p>
+                Bootstrap is a free, open-source front-end framework for building responsive and mobile-first websites
+                and
+                web applications. It provides a collection of pre-designed templates, CSS styles, and JavaScript
+                components
+                to help developers create visually appealing and consistent web interfaces efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4  mx-auto p-2">
+                <h3>BreakPoint</h3>
+                <p>
+                    Bootstrap uses a mobile-first approach with predefined breakpoints for responsive design.
+                    Adjusts layout automatically based on device width.</p>
+                <p><b> Classes:</b>
+                <ul>
+                    <li>Small - sm </li>
+                    <li>Medium - md, </li>
+                    <li>Large - lg, </li>
+                    <li>Extra Large - xl,</li>
+                    <li>Extra Extra Large - xxl</li>
+                </ul>
+                </p>
+                <p>
+                    <b>Example:</b><br>
+                    < div class="col-12 col-md-6 col-lg-4">
+                </p>
+
+
+
+            </div>
+            <div class="col-sm-4  mx-auto p-2">
+                <h3>Container & Container Fluids</h3>
+                <p>
+                    Bootstrap containers are used to center and pad your site’s contents.
+                    .container → Fixed-width container (responsive at each breakpoint)
+                    .container-fluid → Full-width container (100% width across all devices)</p>
+                <p><b> Classes:</b> <br>
+                <ul>
+                    <li> Container Small -> container-sm </li>
+                    <li>Container Medium -> container-md </li>
+                    <li>Container Large -> container-lg </li>
+                    <li>Container Extra Large -> container-xl </li>
+                    <li>Container Extra Extra Large -> container-xxl </li>
+                    <li>Container Fluid -> container-fluid</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4  mx-auto p-2">
+                <h3>Typography</h3>
+                <p>
+                    Bootstrap provides pre-styled text utilities for headings, alignment, and more.</p>
+                <p><b> Classes:</b> <br>
+                <ul>
+                    <li>
+                        .h1 to .h6 - Heading sizes </li>
+                    <li>display-1 to .display-6 - Larger heading styles </li>
+                    <li>lead - Highlights introductory text </li>
+                    <li>text-start, .text-center, .text-end - Text alignment </li>
+                    <li>.fw-bold, .fw-light - Font weight </li>
+                    <li>.fst-italic - Italic text </li>
+                    <li>.text-uppercase, .text-lowercase, .text-capitalize - Text transformations </li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4  mx-auto p-2">
+                <h3>Images </h3>
+                <p>
+                    Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height:
+                    auto;
+                    to the image so that it scales with the parent width.</p>
+                <p><b> Classes:</b> <br>
+                <ul>
+                    <li>.img-fluid - Makes image responsive (max-width: 100%, height: auto)</li>
+                    <li>.img-thumbnail - Adds a border and padding</li>
+                    <li>.rounded, .rounded-circle, .rounded-0 - Controls border-radius</li>
+                    <li>.float-start, .float-end, .mx-auto d-block - Positioning</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 mx-auto p-2">
+                <h3>Colors & Background Colors</h3>
+                <p>Bootstrap provides contextual text and background color utilities.</p>
+                <p><b> Text-Colors:</b></p>
+                <p>.text-primary, .text-secondary, .text-success, .text-danger, .text-warning, .text-info, .text-light,
+                    .text-dark, .text-muted, .text-white</p>
+                <p><b> Background-Colors:</b></p>
+                <p>.bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark,
+                    .bg-white, .bg-transparent</p>
+            </div>
+
+
+
+            <div class="col-sm-4 mx-auto p-2">
+                <h3>Flexbox Utilities</h3>
+                <p><b> Classes:</b> <br>
+                <ul>
+                    <li> .d-flex - Enables flexbox </li>
+                    <li> .flex-row, .flex-column - Direction </li>
+                    <li> .justify-content-start, .justify-content-center,
+                        .justify-content-between, .justify-content-end - Horizontal alignment </li>
+                    <li> .align-items-start, .align-items-center, .align-items-end - Vertical alignment </li>
+                    <li> .flex-wrap, .flex-nowrap - Wrapping behavior</li>
+                    <li> .order-0 to .order-5 - Item order</li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-sm-4 mx-auto p-2">
+                <h3>Container Fluids - Class</h3>
+                <p>
+                <ul>
+                    <li> Creates a full-width layout that spans the entire viewport width.</li>
+                    <li>Often used for headers, footers, and sections requiring edge-to-edge backgrounds.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-sm-4 mx-auto p-2">
+                <h3></h3>
+            </div>
+            <div class="col-sm-4 mx-auto p-2">
+                <h3></h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
