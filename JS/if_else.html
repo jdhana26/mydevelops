@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">IF Condition</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+        <h1>IF Condition Statement</h1>
+    </div>
+
+
+    <script>
+        var a = 20;
+        var b = 30;
+        var c = 40;
+        var d = 10;
+        var e = 5;
+
+
+        if (a>10) {
+            console.log('This is first if', a, )
+        }
+        if (b===30){
+             console.log('This is first if', b, )
+        }
+         if (c>d){
+             console.log('This is first if', c, )
+        }
+         if (b>a>d){
+             console.log('This is first if', b, )
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a > 20 && b < 20) {
+            console.log('This is first if', a, b)
+        }
+        else if (c <= 40 && d >= 10) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a >= 20 && b <= 20) {
+            console.log('This is first if', a, b)
+        }
+        else if (c > 20 && d < 20) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a != 20 || b != 20) {
+            console.log('This is first if', a, b)
+        }
+        else if (c != 20 && d != 20) {
+            console.log('This is second if', a);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+
+        if (a > b || c > d) {
+            console.log('This is first if', a, b)
+        }
+        else if (b < c || d < e) {
+            console.log('This is second if', b, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+
+        if (a < b || a < c) {
+            console.log('This is first if', a, b)
+        }
+        else if (c > d || d > e) {
+            console.log('This is second if', c, e);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a >= b || c <= d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a <= b || c >= d) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a <= b || c <= d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a >= b || c <= d) {
+            console.log('This is second if', b, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a != b || c != d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a != b || c != d) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a == b && c == d) {
+            console.log('This is first if', a, c)
+        }
+        else if (a <= b && c >= d) {
+            console.log('This is second if', b, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a === b || c === d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a === b && c === d) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+
+        if (a == b && c == d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a == b || c == d) {
+            console.log('This is second if', c, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a === b && c === d) {
+            console.log('This is first if', a, b)
+        }
+        else if (a === b || c === d) {
+            console.log('This is second if', b, c);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a === b || c === d) {
+            console.log('This is first if', a, c)
+        }
+        else if (a === b && c === d) {
+            console.log('This is second if', b, d);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a > b && c < d && d > e) {
+            console.log('This is first if', a, c, d)
+        }
+        else if (a < b && c > d && d < e) {
+            console.log('This is second if', a, c, e);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+        if (a > b || c < d || d > e) {
+            console.log('This is first if', a, c, d)
+        }
+        else if (a > b && c < d && d > e) {
+            console.log('This is second if', a, c, e);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+
+        if (a >= b && c <= d && d >= e) {
+            console.log('This is first if', a, c, d)
+        }
+        else if (a >= b || c <= d || d >= e) {
+            console.log('This is second if', b, d, e);
+        }
+        else {
+            console.log('This is Correct');
+        }
+
+
+        if (a >= b || c <= d || d >= e) {
+            console.log('This is first if', a, c, d)
+        }
+        else if (a >= b && c <= d && d >= e) {
+            console.log('This is second if', a, c, e);
+        }
+        else {
+            console.log('This is next satement');
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
