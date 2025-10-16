@@ -1,0 +1,48 @@
+Array:
+1.<script>
+var arr=[2,4,6,8]
+console.log(arr[2])
+</script>
+2.<script>
+var arr=[2,4,6,8,'ten']
+console.log(arr[4])
+</script>
+3.<script>
+var arr=[2,4,6,8]
+console.log(arr[2])
+</script>
+4.<script>
+var arr=["Hello","world"]
+console.log(arr)
+</script>
+5.<script>
+var arr=[2,4,"Hello",8]
+console.log(arr)
+</script>
+6.<script>
+var arr=[1,2,3]
+console.log(typeof arr)
+</script>
+ 
+7.<script>
+var arr=[]
+console.log(arr)
+</script>
+8.<script>
+var arr=['a','b','c','d']
+console.log(arr)
+</script>
+9.
+<script>
+var arr=[]
+console.log(arr)
+</script>
+10.<script>
+let a=10;
+let b=20;
+var arr=[a,b,c,d]
+console.log(arr)
+
+
+
+
