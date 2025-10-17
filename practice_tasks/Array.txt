@@ -27,6 +27,111 @@ console.log(typeof arr)
 7.<script>
 var arr=[]
 console.log(arr)
+////OBJECT CREATION///
+1.let obj={Sports:"Football:,Team:"Southafrica",Qualify:"Fifa"}
+console.log(obj)
+2.let theHotel={food:"Biryani",Price:180}
+console.log(theHotel)
+3.let theatre={Movie:"Jersey",Actor:"Nani",MD:"Anirudh"}
+console.log(theatre)
+4..let obj={usefull:"Linkedin",Notuseful:"Instagram"}
+console.log(obj)
+5.let lap={Brand:"Dell",Brandkeyboard:"zebronics",Mouse:"hp"}
+console.log(lap)
+6.let exam={Subject:"maths",Marks:99}
+console.log(exam)
+7.var details={Student:"Tharun",standard:5}
+console.log(details.standard)
+8.let lang={prog:"python",oops:"java'}}
+console.log(lang.oops)
+9. let choose={engg:"BE",arts:"Bsc"}
+console.log(choose.arts)
+10.var apps={messanger:"Whatsapp,fb,arattai",Food:["swiggy","zomato"],Travel:"makemytrip,ixigo"}
+console.log(apps.Food[0])
+11.var apps={messanger:{"Whatsapp","fb","arattai"],Food:["swiggy","zomato"],Travel:["makemytrip","ixigo"]}
+console.log(apps.Food[0])
+console.log(apps.messanger[2])
+console.log(apps.Travel[0])
+12. let tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+13.var tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+14.const tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+/////Array of object////
+1,let arr=[1,2,{"hello"
+"js"}]
+console.log(arr)
+2.let arr1 = [1, 2, { "hello": "world" }]
+console.log(arr1)
+3.var arr = ["numbers", { "one": 1, "two": 2, "three": 3 }]
+console.log(arr[0])
+4.let bags=[wrogn,{safari:1,tycoon:2,}]
+console.log(bags)
+5.var applianaces=[tv,{washmachine:1,fridge:2}]
+console.log(appliances)
+6.const ac=[harrier,{ogeneral:1{lG:2}}]
+console.log(ac)
+///return statement in function////
+function add(a,b){
+ return a+b;
+}
+function add(b,c)
+{
+	return 
+}
+function add(a,b){
+ return a+b;
+}
+function div(a,b){
+ return a/b;
+}
+
+function mul(a,b){
+ return a*b;
+}
+function sub(a,b){
+ return a-b;
+}
+// Anonymous Functions
+let bs5= function () {
+    console.log("engine");
+}
+let playStation = function () {
+    console.log("ps5"); 
+}
+let sumNum = function () { 
+    console.log(10 + 20); 
+}
+let car = function () { 
+    console.log("Nissan GTR"); 
+}
+let Bike= function () { 
+    console.log("HImalayan"); 
+}
+let calcArea = function () { 
+    console.log(10 * 5); 
+}
+let movie = function () { 
+    console.log("Arasan"); 
+}
+let getDate = function () { 
+    console.log(new Date()); 
+}
+// Arrow Functions
+let AI = () => console.log("Hello from Arrow");
+let add = () => console.log(5 + 10);
+let info = () => console.log("Info Updated");
+let name = () => console.log("Tharun");
+let printer = () => console.log("Cannon");
+let phone = () => console.log("Calling...");
+let loop = () => console.log("for loop");
+let success = () => console.log(" consistency is my key");
+let paper = () => console.log("A4");
+let wicketKeeper = () => console.log("Mahendra singh Dhoni");
+let vegetable = () => console.log("potato");
+let undo = () => console.log("ctrl+z");
+
 </script>
 8.<script>
 var arr=['a','b','c','d']
