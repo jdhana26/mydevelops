@@ -23,7 +23,6 @@ console.log(arr)
 var arr=[1,2,3]
 console.log(typeof arr)
 </script>
- 
 7.<script>
 var arr=[]
 console.log(arr)
@@ -42,6 +41,47 @@ let a=10;
 let b=20;
 var arr=[a,b,c,d]
 console.log(arr)
+////OBJECT CREATION///
+1.let obj={Sports:"Football:,Team:"Southafrica",Qualify:"Fifa"}
+console.log(obj)
+2.let theHotel={food:"Biryani",Price:180}
+console.log(theHotel)
+3.let theatre={Movie:"Jersey",Actor:"Nani",MD:"Anirudh"}
+console.log(theatre)
+4..let obj={usefull:"Linkedin",Notuseful:"Instagram"}
+console.log(obj)
+5.let lap={Brand:"Dell",Brandkeyboard:"zebronics",Mouse:"hp"}
+console.log(lap)
+6.let exam={Subject:"maths",Marks:99}
+console.log(exam)
+7.var details={Student:"Tharun",standard:5}
+console.log(details.standard)
+8.let lang={prog:"python",oops:"java'}}
+console.log(lang.oops)
+9. let choose={engg:"BE",arts:"Bsc"}
+console.log(choose.arts)
+10.var apps={messanger:"Whatsapp,fb,arattai",Food:["swiggy","zomato"],Travel:"makemytrip,ixigo"}
+console.log(apps.Food[0])
+11.var apps={messanger:{"Whatsapp","fb","arattai"],Food:["swiggy","zomato"],Travel:["makemytrip","ixigo"]}
+console.log(apps.Food[0])
+console.log(apps.messanger[2])
+console.log(apps.Travel[0])
+12. let tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+13.var tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+14.const tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+/////Array of object////
+1,let arr=[1,2,{"hello"
+"js"}]
+console.log(arr)
+2.let arr1 = [1, 2, { "hello": "world" }]
+console.log(arr1)
+3.var arr = ["numbers", { "one": 1, "two": 2, "three": 3 }]
+console.log(arr[0])
+    
+
 
 
 
