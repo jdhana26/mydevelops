@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array higher order model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            padding: 20px;
+            background-color: rgb(2, 66, 63);
+            color: white;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <p> Array higher order model</p>
+    </div>
+    <p style="justify-content: center; backgroung-color: rgb(18, 155, 235); color:black;text-align:center;"> kindly
+        Right
+        click </p>
+    <script>
+        const arr = [1, 2, 2, 3, 4, 5]
+        let even = arr.filter((n) => n % 2 == 0)
+
+        console.log(even);
+
+    </script>
+    <script>
+        const no = [1, 2, 3, 4, 5, 6, 7]
+        let evenno = no.filter((n) => n >= 5)
+
+        console.log(evenno);
+
+    </script>
+    <script>
+        const rno = [49, 48, 67, 75, 90]
+        let rno1 = rno.filter((n) => n < 60)
+
+        console.log(rno1);
+
+    </script>
+    <script>
+        const strr = ["tharun", "mani", "sabreesh", "varun", "jd"]
+        let str1 = strr.filter((n) => n.includes("a"));
+        console.log(str1);
+    </script>
+    <script>
+        const Fevenno = [2, 2, 4, 6, 8,]
+        let Fevenn = no.find((n) => n % 2 == 0)
+        console.log("first even no", Fevenn);
+    </script>
+    <script>
+        const Fstrr = ["tharun", "mani", "sabreesh", "varun", "jd"]
+        let Fstrr1 = Fstrr.find((n) => n.includes("a"));
+        console.log(Fstrr1);
+
+
+
+    </script>
+    <script>
+        const names = ["tharun", "mani", "sabreesh", "varun", "jd"]
+        let findnames = names.find(name => name.length > 3);
+        console.log(findnames);
+
+
+    </script>
+    <script>
+        let strnames = ("kavi")
+        let sname = strnames.charAt((0));
+        console.log(sname);
+
+
+    </script>
+    <script>
+        let chname = ["kavin","dhana","tamil","siva"]
+        let cname = [chname[0][0],chname[1][0],chname[2][0],chname[3][0]];
+        console.log(cname);
+    </script>
+    <script>
+        let obj={name:"react"}
+        for (let js in obj){
+            console.log("key" +obj[js]);
+        }
+    </script>
+    <script>
+        let obj1 = ["row","column"]
+
+        for(let k of obj1){
+            console.log(k);
+            
+        }
+        
+    </script>
+</body>
+
+</html>
