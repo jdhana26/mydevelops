@@ -30,20 +30,54 @@ else{
 console.log("Dhanajaya")
 </script>
 <script>
-    const juice_want = (order)=>{
-         var freshjuice=["watermelon"]
-        if (freshjuice === "watermelon") {
-            console.log("ready to watermelon juice");
-            
-            
-        } else {
-            console.log("not available");
-        
-            
+
+
+        const products = [
+            { name: "bovonto", category: "cooldrinks", price: "30" },
+            { name: "fanta", category: "cooldrinks", price: "45" },
+            { name: "cococola", category: "cooldrinks", price: "50" },
+            { name: "sprite", category: "cooldrinks", price: "35" },
+            { name: "watermelon", category: "freshjuice", price: "25" },
+            { name: "muskmelon", category: "freshjuice", price: "60" },
+            { name: "pomegranate", category: "freshjuice", price: "120" },
+            { name: "apple", category: "freshjuice", price: "80" },
+
+        ];
+
+
+        console.log("List of drinks Products");
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].category === "cooldrinks") {
+                console.log(`cooldrinks: ${products[i].name} - Rs.${products[i].price}`);
+            } else if (products[i].category === "freshjuice") {
+                console.log(`freshjuice: ${products[i].name} - Rs.${products[i].price}`);
+            }
         }
-    }
-    juice_want()
-</script>
-    
+
+        const orderItems = [
+            { name: "bovonoto", quantity: 2 },
+            { name: "muskmelon", quantity: 1 },
+            { name: "pomegranate", quantity: 4 }
+        ];
+
+
+        let i = 0;
+        let grandTotal = 0;
+
+        console.log("----- Your Order -----");
+        while (i < orderItems.length) {
+            const product = products.find(p => p.name === orderItems[i].name);
+            if (product) {  
+                const itemTotal = product.price * orderItems[i].quantity;
+                grandTotal += itemTotal;
+                console.log(`${product.name} x${orderItems[i].quantity} = Rs.${itemTotal}`);
+            }
+            i++;
+        }
+
+        console.log(`GrandTotal: Rs.${grandTotal}`);
+
+
+    </script>
 </body>
-</html>
+ 
