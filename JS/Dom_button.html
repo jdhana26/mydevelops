@@ -1,34 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM BUTTON PROCESS</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .banner {
 
-        margin: 20px;
-        padding: 30px;
-        background-color: rgb(230, 31, 31);
-        color:white;
-        justify-content: center;
-        text-align: center;
+    #products {
+        background-color: yellow;
+        color: black;
+        padding: 20px;
+        border: 2px solid;
+        margin-left: 680px;
+        margin-top: 30px;
+        border-radius: 15px;
     }
 
-    
+    #products:hover {
+        background-color: rgb(219, 219, 106);
+        color: rgb(8, 0, 0);
+        border-color: yellow;
+    }
 </style>
+
 <body>
     <div class="banner">
-        <h1>Iyengars Tea Shops</h1>
+        <img src="js_images/coffee.png" width="100%">
     </div>
     <div>
-       <button> </button>
+        <button id="products">Available products </button>
     </div>
+    <div id="hidebutton" class="btnstyle" style="margin-left:600px;display:none">
+        <button id="btn1" style="background-color: rgb(242, 140, 6);color: black;padding: 20px;border: 2px solid;margin-top: 30px;
+        border-radius: 15px; gap:15px;"> Tea</button>
+        <button id="btn2" style="background-color: rgb(242, 140, 6);color: black;padding: 20px;border: 2px solid; margin-top: 30px;
+        border-radius: 15px;gap:15px;">Coffee</button>
+        <button id="btn3" style="background-color: rgb(242, 140, 6);color: black;padding: 20px;border: 2px solid; margin-top: 30px;
+        border-radius: 15px;"> Milk</button>
+        <button id="btn4" style="background-color: rgb(242, 140, 6);color: black;padding: 20px;border: 2px solid; margin-top: 30px;
+        border-radius: 15px;">Boost</button>
+
+    </div>
+
+
+    <button id="pay"
+        style="background-color:blue;color:white; border-radius:20px;padding: 5px;width:200px;display:none;margin-left:650px;margin-top:20px">
+        payment</button>
+    <h1 id="heading"> </h1>
+
+    <script>
+        let show = document.getElementById("products");
+        let hidden = document.getElementById("hidebutton");
+
+        show.addEventListener("click", () => {
+            if (hidden.style.display === "none") {
+                hidden.style.display = "block"
+            }
+            else {
+                hidden.style.display = "none";
+
+            }
+        })
+        let teabtn = document.getElementById("btn1")
+        var paybtn = document.getElementById("pay")
+
+        teabtn.addEventListener("click", () => {
+            if (paybtn.style.display === "none") {
+                paybtn.style.display = "block"
+            }
+            
+        })
+        
+        
+
+        let cofbtn = document.getElementById("btn2")
+        var paybtn = document.getElementById("pay")
+
+        cofbtn.addEventListener("click", () => {
+            if (paybtn.style.display === "none") {
+                paybtn.style.display = "block"
+            }
+        })
+         
+         
+        let milkbtn = document.getElementById("btn3")
+        var paybtn = document.getElementById("pay")
+
+        milkbtn.addEventListener("click", () => {
+            if (paybtn.style.display === "none") {
+                paybtn.style.display = "block"
+            }
+        });
+         
+        let boostbtn = document.getElementById("btn4")
+        var paybtn = document.getElementById("pay")
+
+        boostbtn.addEventListener("click", () => {
+            if (paybtn.style.display === "none") {
+                paybtn.style.display = "block"
+            }
+        });
+
+        paybtn.addEventListener("click", () => {
+            if (paybtn.style.display === "block") {
+                alert("Thanks for you order");
+            }
+            else {
+                
+            }
+        });
+
+    </script>
+
 </body>
+
 </html>

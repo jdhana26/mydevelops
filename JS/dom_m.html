@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        button {
+            display: block;
+            background-color: brown;
+            color: white;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid brown;
+            justify-content: center;
+            padding: 10px;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: rgb(52, 52, 52);
+            border: 2px solid rgb(52, 52, 52);
+        }
+
+        .list {
+            display: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 25px;
+            justify-content: center;
+            padding: 10px;
+            width: 30%;
+        }
+
+        .header {
+            display: block;
+            justify-content: center;
+            padding: 10px;
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="header">
+            <h1> GitTea Cafe </h1>
+        </div>
+        <br>
+
+        <!-- <img src="img/banner.png" alt="" width="100%"> -->
+
+        <button id="showProducts">Available Products</button>
+
+        <br>
+
+        <div id="hidebutton" class="list">
+            <button id="teapay">Tea</button> <br>
+            <button id="coffeepay">Coffee</button> <br>
+            <button id="horlickspay">Horlicks</button> <br>
+            <button id="boostpay">Boost</button>
+        </div>
+
+        <button id="pay" style="display: none;">Payment</button>
+        <h3 id="heading"> </h3>
+        <img id="image" src="img/tea.png" width="200" style="display: none; align-items: center;">
+        <img id="image1" src="img/coffee.png" width="200" style="display: none; align-items: center;">
+        <img id="image2" src="img/horlicks.png" width="200" style="display: none; align-items: center;">
+        <img id="image3" src="img/boost.png" width="200" style="display: none; align-items: center;">
+
+
+    </center>
+</body>
+
+<script>
+
+    let btnshow = document.getElementById("showProducts")
+    let btnhide = document.getElementById("hidebutton")
+
+    btnshow.addEventListener("click", () => {
+        if (btnhide.style.display === "none") {
+            hidebutton.style.display = "block"
+        } else {
+            hidebutton.style.display = "none"
+            pay.style.display = "none"
+        }
+    });
+
+
+    var payshow = document.getElementById("teapay")
+    payshow.addEventListener("click", () => {
+        if (payshow.style.display === "block") {
+            pay.style.display = "none"
+        } else {
+            payshow.style.display === "block"
+            pay.style.display = "block"
+
+        }
+    });
+
+
+
+    var payshow = document.getElementById("coffeepay")
+    payshow.addEventListener("click", () => {
+        if (payshow.style.display === "block") {
+            pay.style.display = "none"
+        } else {
+            payshow.style.display === "block"
+            pay.style.display = "block"
+
+        }
+    });
+
+
+
+    const payalert = document.getElementById("pay");
+    const output = document.getElementById("output");
+
+    const img = document.getElementById("image")
+
+
+
+    pay.addEventListener("click", () => {
+        if (pay.style.display === "block") {
+            img.style.display = "block"
+            img1.style.display = "none"    // tea
+            img2.style.display = "none"   // tea
+            img3.style.display = "none"  // coffee
+            img.src = "img/tea.png";
+        }
+    });
+
+    pay.addEventListener("click", () => {
+        if (pay.style.display === "block") {
+            alert("Thanks for you order");
+        }
+    });
+
+
+    const img1 = document.getElementById("image1")
+
+    pay.addEventListener("click", () => {
+        if (pay.style.display === "block") {
+            img.style.display = "block"
+            img.style.display = "none"    // tea
+            img2.style.display = "none"   // tea
+            img3.style.display = "none"  // coffee
+            img1.src = "img/coffee.png";
+        }
+    });
+
+    const img2 = document.getElementById("image2")
+    pay.addEventListener("click", () => {
+        if (pay.style.display === "block") {
+            img2.style.display = "block"
+            img2.src = "img/tea.png";
+            img.style.display = "none"    // tea
+            img1.style.display = "none"   // tea
+            img3.style.display = "none"  // coffee
+        }
+    });
+
+    const img3 = document.getElementById("image3")
+    pay.addEventListener("click", () => {
+        if (pay.style.display === "block") {
+            img3.style.display = "block"
+            img3.src = "img/coffee.png";
+            img.style.display = "none"    // tea
+            img2.style.display = "none"   // tea
+            img1.style.display = "none"  // coffee
+        }
+    });
+
+</script>
+
+
+</html>
