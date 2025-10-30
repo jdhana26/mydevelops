@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Search</title>
+    <style>
+        #result img {
+            width: 200px;
+            height: 200px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Search Actor Image</h2>
+
+    <input type="text" id="searchInput" placeholder="Search... example: ajith">
+    <button id="searchBtn">Search</button>
+    
+
+    <div id="result"></div>
+
+   <script>
+    // Image database (local image paths)
+    let images = {
+        ajith: "js_images/ajith.jpg",
+        vijay: "js_images/vijay.jpg",
+        suriya: "js_images/suriya.jpg",
+        sk: "img/sk.jpg",
+        dhanush: "js_images/dhanush.jpeg",
+        dulquer: "js_images/dq.jpg",
+        tovino: "js_images/tovino.jpeg",
+    };
+
+    document.getElementById("searchBtn").addEventListener("click", function () {
+        let searchText = document.getElementById("searchInput").value.toLowerCase();
+        let resultDiv = document.getElementById("result");
+
+        if (images[searchText]) {
+            resultDiv.innerHTML = `<img src="${images[searchText]}" alt="${searchText}" width="200">`;
+        } else {
+            resultDiv.innerHTML = `<p style="color:red;">Image Not Found ❌</p>`;
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+ 
