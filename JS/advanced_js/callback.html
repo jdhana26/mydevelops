@@ -76,9 +76,9 @@
      Promise((ressolve,reject)=>{
         
     })
-     -->
+     
 
-</script>
+</script>-->
 <script>
      
 function preparingpizza() {
@@ -114,11 +114,11 @@ function deilvertohome() {
 preparingpizza()
   .then((msg) => {
     console.log("Step 1 Done:", msg);
-    return preparingpizza();  
+    return packingpizza();  
   })
   .then((msg2) => {
     console.log("Step 2 Done:", msg2);
-    return packingpizza();  
+    return deilvertohome();  
   })
   .then((msg3) => {
     console.log("Step 3 Done:", msg3);
@@ -128,3 +128,4 @@ preparingpizza()
     console.log("Error:", err);
   });
 </script>
+ 
