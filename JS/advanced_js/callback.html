@@ -1,0 +1,130 @@
+<!-- <script>
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+    promise.then(()=>{})
+</script>
+<script>
+    Promise((ressolve,reject)=>{
+
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     Promise((ressolve,reject)=>{
+        
+    })
+     -->
+
+</script>
+<script>
+     
+function preparingpizza() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Hot pizza is here");
+      resolve("process done");
+    }, 2000);
+  });
+}
+
+ 
+function packingpizza() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("ready to pack");
+      resolve(" Add extra masala packs");
+    }, 1500);
+  });
+}
+
+ 
+function deilvertohome() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(" deliver within 10 mins");
+      resolve("Delivered to home");
+    }, 1000);
+  });
+}
+
+
+preparingpizza()
+  .then((msg) => {
+    console.log("Step 1 Done:", msg);
+    return preparingpizza();  
+  })
+  .then((msg2) => {
+    console.log("Step 2 Done:", msg2);
+    return packingpizza();  
+  })
+  .then((msg3) => {
+    console.log("Step 3 Done:", msg3);
+    console.log("All process done ✅");
+  })
+  .catch((err) => {
+    console.log("Error:", err);
+  });
+</script>
