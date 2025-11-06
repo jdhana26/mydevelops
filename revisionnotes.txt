@@ -1,0 +1,123 @@
+🌐 1️⃣ fetch()
+
+Definition:
+fetch() is used to get (or send) data from a server (like an API or file).
+It returns a Promise, so we can handle it using .then() or async/await.
+
+Example: Fetch a text file
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Fetch Example</h3>
+<pre id="data"></pre>
+
+<script>
+fetch('data.txt')       // fetch a text file
+  .then(response => response.text())
+  .then(content => {
+    document.getElementById('data').innerText = content;
+  });
+</script>
+</body>
+</html>
+
+👉 It takes the content of data.txt and shows it inside <pre> tag.
+
+
+---
+
+🧾 2️⃣ HTML Table
+
+Definition:
+A table in HTML is used to display data in rows and columns using <table>, <tr>, <th>, and <td>.
+
+Example:
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Dhana</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Ravi</td>
+    <td>23</td>
+  </tr>
+</table>
+
+
+---
+
+🔁 3️⃣ map()
+
+Definition:
+map() creates a new array by applying a function to each element of the original array.
+
+Example:
+
+let numbers = [1, 2, 3, 4];
+let doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+👉 Each number is multiplied by 2.
+
+
+---
+
+🔍 4️⃣ filter()
+
+Definition:
+filter() creates a new array with elements that pass a condition (true/false test).
+
+Example:
+
+let ages = [18, 22, 16, 25];
+let adults = ages.filter(age => age >= 18);
+console.log(adults); // [18, 22, 25]
+
+👉 Only the values that are 18 or more are kept.
+
+
+---
+
+➕ 5️⃣ reduce()
+
+Definition:
+reduce() combines all elements in an array into a single value (like sum, total, etc).
+
+Example:
+
+let nums = [10, 20, 30];
+let total = nums.reduce((sum, current) => sum + current, 0);
+console.log(total); // 60
+
+👉 Adds all numbers together.
+
+
+---
+
+🧩 6️⃣ DOM (Document Object Model)
+
+Definition:
+DOM represents the HTML structure as objects that JavaScript can access and modify (change text, style, elements, etc).
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3 id="heading">Hello</h3>
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText() {
+  document.getElementById("heading").innerText = "Hello Dhana!";
+  document.getElementById("heading").style.color = "blue";
+}
+</script>
+</body>
+</html>
