@@ -1,0 +1,55 @@
+Fetch or Fetch function:
+-> Building browser API and function used to call API's or external url's.
+-> Helps us to get or send data from a server 
+-> To request Asynchronizely and return the promise method 
+
+
+API - Application Programming Interface 
+
+Syntax:
+fetch("url") 
+
+JSON - > Javascript Object Notation 
+Example:
+{
+    "name":"mani",
+    "data":"website",
+    "subject":"react"
+}
+
+dummyjson.com 
+            json passing
+.then((res)=>res.json())
+
+Important: 
+Prmoise Method is important for Backend process 
+Fetch is used to get the data from other servers 
+
+
+for each:
+data.foreach(items => {
+
+})
+
+
+for each:
+const data = data.product;
+data.foreach(items => {
+
+const box = document.createElement("div")
+box.innerHTML = `<h2>${items.title} </h2>`
+box.innerHTML = `<img src=${items.images}/> <h2>${items.title} </h2>`
+container.appendChild(box) 
+})
+
+
+
+TASK:
+Fetch function using async/await
+
+json parse      - json(), JSON.parse()
+    -> syntax: JSON.parse() 
+    -> Get response from other websites or API's
+
+json stringify  - json 
+    -> send request 

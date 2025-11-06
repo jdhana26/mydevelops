@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching data</title>
+    <style>
+        h4{
+            color:rgb(190, 4, 4);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            color: rgb(61, 61, 191);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Fetching the data from online api</h2>
+    <div id="block">
+        
+
+    </div>
+    <script>
+        const getdata = async () => {
+
+
+            try {
+                console.log('fetching data');
+                const cards = await fetch("https://dummyjson.com/quotes?limit=10")
+                const result = await cards.json()
+                const data = result.quotes;
+                const container = document.getElementById("block")
+
+            data.forEach(items => {
+                const box = document.createElement("div")
+                box.innerHTML =`<h4>${items.quote}</h4> <p>${items.author}</p>`
+                container.appendChild(box)
+                
+
+
+
+
+            });
+        }catch(error){
+            console.log("something went wrong",error)
+        }finally{
+            console.log("process done !")
+        }
+
+
+
+    };
+    getdata()
+
+    </script>
+</body>
+
+</html>
