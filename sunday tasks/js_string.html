@@ -1,0 +1,13 @@
+<script>
+    let strword = "developer"
+    const str = [...strword].reverse().join("");
+    console.log(str)
+
+    let isstrword = "radar"
+    const ispalindrome = [...isstrword].reverse().join("");
+    console.log(ispalindrome)
+
+    const isPalindrome = str => str.replace(/\s+/g, '').toLowerCase() === [...str.replace(/\s+/g, '').toLowerCase()].reverse().join('');
+    console.log(isPalindrome("madam"));
+    console.log(isPalindrome("world"));
+</script>
