@@ -109,6 +109,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -185,5 +186,96 @@
 
     </div>
     </div>
+    <div class="parent" id="parent">
+
+        <form id="myform" class="form">
+            <div class="data">
+                <label>Enter your name :</label>
+                <input id="name" type="text" placeholder="In capital word">
+            </div>
+
+            <div class="data">
+                <label>Enter your Mobile no :</label>
+                <input id="mobile" type="tel" placeholder="Enter mobile no ">
+            </div>
+
+            <div class="data">
+                <label>Enter the Problem :</label>
+                <textarea id="problem" required style="width: 200px;height: 40px;"></textarea>
+            </div>
+
+            <div class="data">
+                <label>Where it Happens in the city :</label>
+                <textarea required id="city"></textarea>>
+            </div>
+
+            <div class="data">
+                <label>How do you know :</label>
+                <textarea required id="know"></textarea>
+            </div>
+
+            <div class="data">
+                <label>Review the Problem:</label>
+                <textarea required id="review" style="width: 200px;height: 50px;"></textarea>
+            </div>
+            <div class="data">
+                <button id="btn" type="submit"
+                    style="background-color: black;color: white;height: 25px;width: 50px ;">Submit</button>
+            </div>
+
+            <p id="para"></p>
+
+
+
+        </form>
+
+    </div>
+
+    <script>
+
+        const form = document.getElementById("myform")
+        const para = document.getElementById("para")
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+
+            const username = document.getElementById("name").value
+            const mobile = document.getElementById("mobile").value
+            const problem = document.getElementById("problem").value
+            const happens = document.getElementById("city").value
+            const know = document.getElementById("know").value
+            const review = document.getElementById("review").value
+
+            if (!username || !mobile || !problem || !happens || !know || !review) {
+                para.innerText = "Please fill all fields before submitting";
+                para.style.color = "blue";
+                return;
+            }
+
+            if (mobile.length !== 10) {
+                para.innerText = "Mobile number must be exactly 10 digits";
+                para.style.color = "blue";
+                return;
+            }
+
+            const data = JSON.parse(localStorage.getItem("formdata")) || [];
+            console.log(data);
+            const storedata = { username, mobile, problem, happens, know, review }
+            console.log(storedata);
+
+            data.push(storedata);
+            localStorage.setItem("formdata", JSON.stringify(data));
+
+
+
+
+            alert("Successfully submitted")
+            form.reset();
+            window.location.href = "displaytable.html"
+        })
+
+
+    </script>
+</body>
 
 </html>
