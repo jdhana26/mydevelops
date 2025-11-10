@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing datas</title>
+</head>
+<body>
+
+<table border="2">
+    <thead>
+          <th>S.no</th>
+        <th>Username</th>
+        <th>password</th>
+        
+    </thead>
+    <tbody id="datas1">
+
+    </tbody>
+
+</table>
+
+    
+
+<script>
+ const getData = localStorage.getItem("datas")
+  console.log(getData);
+  
+ const convertData = JSON.parse(getData)
+
+ //console.log([convertData]);
+
+const maindatas = convertData
+   
+const showingdatas = document.getElementById("datas1")
+ 
+maindatas.forEach((e,i)=>{
+
+    const row = `<tr>
+        <td>${i+1}</td>
+        <td>${e.email}</td>
+        <td>${e.password}</td>
+   
+        </tr>
+        `;
+
+        showingdatas.innerHTML +=row; 
+
+})
+
+</script>
+</body>
+</html>
