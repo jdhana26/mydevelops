@@ -1,0 +1,29 @@
+*{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+}
+img {
+    opacity: 0.5;
+}
+ .bgimg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rgb(12, 12, 1);
+  font-weight: bold;
+  background-color:#FFDB58;
+  opacity: 0.8;
+  box-shadow: 2px;
+  padding: 100px;
+  margin: 5px;
+  border-radius: 10px;
+ box-shadow: 2px 2px 3px 4px #5d5b5b;
+
+}
