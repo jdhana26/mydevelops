@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & Looping Condition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Array & Looping Condition</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+
+    </div>
+
+
+
+    <script> //string
+        let myString = "World";
+        for (let i = 0; i < myString.length; i++) {
+            console.log(`index ${i}: ${myString[i]}`);
+        }
+    </script>
+
+    <script>  //number
+        var arr = [9, 8, 7, 6, 5]
+        console.log('Array Length:', arr);
+
+        for (let i = 0; i < arr.length; i++) {
+            //    const element = array[i];
+        }
+    </script>
+
+
+    <script>
+        var arr = [2, 5, 8, 9, 5]
+        //    console.log(arr);   // print the given value with index address
+
+        for (let i = 0; i < arr.length; i++) {    //index address
+            //console.log(i);
+            if (i % 2 === 0) {                                 //% module
+                console.log('Even No', i);
+
+            } else {
+                console.log('Odd No', i);
+
+            }
+        }
+    </script>
+
+
+    <script>  // 1<3 1,2  1<=3 1,2,3
+        for (let start = 1; start <= 3; start++) {    // 1;1<=3;1++ = false , 2;2<=3;2++ = false,  3;3<=3;3++ = condition true
+            console.log("I am the Starting Point");
+            for (let end = 1; end <= start; end++) {      //1;1<=3;1++ = false(print one times), 2;2<=3;2++ = false print 2 times
+                console.log("End Point", end);                           // 3<=3 = true print 3 times
+            }
+        }
+    </script>
+
+
+
+
+    <script>
+        let middle = ""                              // empty string
+        for (let begin = 1; begin <= 3; begin++) {
+            middle += "$"                            
+        }
+        console.log(middle);                       
+    </script>
+
+
+    <script>
+        let narrow = ""                              // empty string
+        for (let begin = 1; begin <= 3; begin++) {
+            narrow += "$"                            // assignment operator +-,  *=,  -=,
+            console.log(narrow);                    // output in next line
+        }
+    </script>
+
+
+
+    <script>
+        for (i = 1; i < 4; i++) {            /// loop 4 times check condition less than
+            console.log('Master First I value:', i);   // print 
+
+            for (j = 1; j < i * 2; j++) {        // In condition multiply the value by 2
+                // 1;1<1*2;1++ = 1;1<2;1++ (1st loop print & then increment by 1)
+                console.log('Second J value:', j);   // 2;2<2*2;2++ = 2;2<4;2++ (2nd loop print & then increment by 1)
+                // 3;3<3*2;3++ = 3;3<6;3++ (3rd loop print and then go to i value, it has 4)
+            }                                           // check the condition 4<4 it gives false, so the loop stop
+        }
+    </script>
+
+
+    <script>
+        for (i = 1; i <= 4; i++) {                 // loop 4 times check condition lesser than equal
+            console.log('Start Point value:', i);  // print 
+
+            for (j = 1; j <= i * 2; j++) {         // 1;1<=1*2;1++ = 1;1<=2;1++ (1st loop print & then increment by 1)
+                console.log('Finish Point:', j);   // 2;2<=2*2;2++ = 2;2<=4;2++ (2nd loop print & then increment by 1)
+                // 3;3<=3*2;3++ = 3;3<=6;3++ (3rd loop print and then go to i value, it has 4)
+                //4;4<=4*2;4++ = 4;4<=8;4++
+            }                                      // check the condition 5<=4 it gives false, so the loop stop
+        }
+    </script>
+
+    <script>
+        const nos = [1, 2, 3, 4,5]
+        let total = 0;
+        for (let i = 0; i < nos.length; i++) {
+            const num = nos[i];
+            const square = num * num;
+            const cube = num ** 3;
+            const half = num / 2;
+            console.log(
+                `Number: ${num},
+                Square: ${square},
+                Cube: ${cube},
+                Half: ${half}`
+            );
+        }
+    </script>
+
+
+    <script>
+        let out = '';
+        for (i = 1; i <= 5; i++) {
+            let temp = i;
+            for (e = 1; e <= i; e++) {
+            out = out + '* ';
+        }
+        out = out + "\n";
+    }
+        console.log(out);
+    </script>
+
+    <script>
+        for(i=0;i<=2;i++){  // 0,1,2   
+            console.log('Master I value:',i);
+            
+            for(j=0;j<=1;j++){ // 0,1
+                console.log('Little Master J value:',j);
+                
+                for(k=0;k<=1;k++){ //0,1
+                    console.log('K Value',k);
+                    
+                }
+            }
+        }   
+
+
+    </script>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

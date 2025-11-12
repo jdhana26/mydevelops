@@ -33,15 +33,299 @@
     <a style="justify-content:center; background-color:rgb(193, 8, 225); padding:20px;color:black;margin-top:20px" href="JS/advanced_js/fetch.html">Fetch process</a> <br> <br>
     <a style="justify-content:center; background-color:rgb(193, 8, 225); padding:20px;color:black;margin-top:20px" href="JS/advanced_js/formls.html">local srorage</a> <br> <br>
     <a style="justify-content:center; background-color:rgb(193, 8, 225); padding:20px;color:black;margin-top:20px" href="Bootstrap/intro.html">Bootstrap-cards,flex,banner</a> <br> <br>
+    <a style="justify-content:center; background-color:rgb(193, 8, 225); padding:20px;color:black;margin-top:20px" href="Bootstrap/chennaijobs.html">struggling jobs in chennai</a> <br> <br>
 
 </div>
 
 </body>
  
-<!-- <div>
+<div>
     <iframe src="revisionnotes.txt" width="500" height="200"></iframe>
     </div><br> -->
 
 </html>
  
- 
+
+<!-- <! <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERN Stack Dashboard</title>
+
+  <style>
+    /* -------- RESET & BASE -------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top left, #1a1a2e, #0f2027, #2c5364);
+      color: #eaeaea;
+      padding: 40px 20px;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* -------- HEADER -------- */
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #ff0080, #7928ca, #2afadf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 50px;
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0px);
+      }
+
+      to {
+        transform: translateY(-5px);
+      }
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    /* -------- TABLE CONTAINERS -------- */
+    .table-container {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 25px;
+      margin: 40px auto;
+      max-width: 950px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .table-container:hover {
+      box-shadow: 0 0 35px rgba(0, 255, 255, 0.3);
+      transform: scale(1.02);
+    }
+
+    .table-container h2 {
+      text-align: center;
+      margin-bottom: 18px;
+      color: #00e0ff;
+      text-shadow: 0 0 8px rgba(0, 224, 255, 0.8);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    /* -------- TABLE STYLES -------- */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    thead {
+      background: linear-gradient(90deg, #7928ca, #2afadf);
+    }
+
+    th {
+      color: #fff;
+      font-weight: 600;
+      text-align: left;
+      padding: 14px 16px;
+      letter-spacing: 0.5px;
+    }
+
+    tbody tr {
+      transition: all 0.3s ease;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    tbody tr:hover {
+      background: rgba(0, 255, 255, 0.08);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      transform: translateX(4px);
+    }
+
+    td {
+      padding: 14px 16px;
+      color: #eaeaea;
+    }
+
+    /* -------- LINKS -------- */
+    a {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 8px;
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: 500;
+      background: rgba(0, 224, 255, 0.08);
+      border: 1px solid rgba(0, 224, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: linear-gradient(90deg, #00e0ff, #7928ca);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    /* -------- FOOTER -------- */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+    }
+
+    footer span {
+      color: #00e0ff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>💻 MERN Stack Developer Dashboard</h1>
+  </header>
+
+  HTML SECTION -->
+  <!-- <div class="table-container">
+    <h2>🌐 HTML</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Topic</th>
+          <th>Tasks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Planet_FS</td>
+          <td><a href="./Assesments_FS/Projects/About_Planet/planet.html">Task 1</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Arrays_JS</td>
+          <td><a href="./Assesments_FS/JS/Array Continue/Array.html">Continue</a> |
+            <a href="./Assesments_FS/JS/Array Advanced/ArrayA.html">Advanced</a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Object Creation_JS</td>
+          <td><a href="./Assesments_FS/JS/Object_Creation/object.html">Higher Order</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CSS SECTION -->
+  <!-- <div class="table-container">
+    <h2>🎨 CSS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Topic</th>
+          <th>Tasks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>DOM_Intro_JS</td>
+          <td><a href="./Assesments_FS/JS/DOM_Intro/domintro.html">Tea_Shop</a> |
+            <a href="./Assesments_FS/JS/DOM_Events/event.html">Shop_Button</a> |
+            <a href="./Assesments_FS/JS/DOM_Formhandling/formhandling.html">Image_show</a>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>ES6</td>
+          <td><a href="./Assesments_FS/JS/ES6_Destructuring/index.html">Validating Clients</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Async/Sync_JS</td>
+          <td><a href="./Assesments_FS/JS/Sync_Async/Sync.html">Timeout/Interval</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+  <!-- JAVASCRIPT SECTION -->
+  <!-- <div class="table-container">
+    <h2>⚡ JavaScript</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Topic</th>
+          <th>Tasks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>Callback_Promises_JS</td>
+          <td><a href="./Assesments_FS/JS/Callback_Promises/promise.html">Promises syntax</a></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>FETCH_JS</td>
+          <td><a href="./Assesments_FS/JS/Fetch()/fetch.html">DummyJSON</a></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Validating_JS</td>
+          <td><a href="./Assesments_FS/JS/Form_Validation/form.html">Validate_Table</a></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Bootstrap_CSS</td>
+          <td><a href="./Bootstrap/1.Cards_Making/cards.html">Cards_Bootstrap</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    Designed with ❤️ by <span>Dhana_JD</span> | © 2025
+  </footer>
+</body>
+
+</html> --> --
