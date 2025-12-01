@@ -9,8 +9,8 @@ API - Application Programming Interface
 Syntax:
 fetch("url") 
 
-JSON - > Javascript Object Notation 
-Example:
+ - > Javascript Object Notation 
+ExamJSONple:
 {
     "name":"mani",
     "data":"website",
