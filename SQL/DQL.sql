@@ -24,7 +24,7 @@ select emp_dept,avg(emp_salary) as avg_salary from employee group by emp_dept;
 select emp_dept, min(emp_salary) as min_salary,max(emp_salary) as max_salary from employee group by emp_dept;
 select emp_dept, count(*) as totemp from employee group by emp_dept having count(*)>1;
 select emp_dept , count(*) as avg_salary from employee group by emp_dept having avg(emp_salary)>30000;
-select emp_city ,count(*) as avg_salary from employee group by emp_city;
+select emp_city ,count(*) as avg_salary from employee group by emp_city ;
 
 
 
